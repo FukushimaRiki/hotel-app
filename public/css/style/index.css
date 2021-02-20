@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: serif;
+}
+
+h1 {
+  width: 100%;
+  padding: 20px;
+  border-left: 15px solid #4169E1;
+  background:	#F0F8FF;
+}
+
+/* 全送信ボタン共通 */
+button[type="submit"] {
+  width: 200px;
+  margin: 40px auto 0 auto;
+  font-size: 22px;
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 991px) {
+  button[type="submit"] {
+    font-size: 20px;
+  }
+}
+
+/* ログイン時画面共通部分 */
+.content {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+@media screen and (max-width: 991px) {
+  .content {
+    width: 100vw;
+  }
+}
+
+/* 全完了画面共通 */
+.complete {
+  margin:170px 60px;
+  font-size: 36px;
+  text-align:center;
+}
+.complete-btn {
+  display: block;
+  width: 300px;
+  margin: 40px auto 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* トップメニューバー */
+#top-menu a{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+}
+
+#room_search {
+  padding: 20px;
+}
+@media screen and (max-width: 991px) {
+  #room_search {
+    text-align: center;
+  }
+}
+
+/* ユーザ情報入力テーブル */
+#user-input_table {
+  width: 100%;
+}
+#user-input_table tr th{
+  width: 35%;
+  text-align:right;
+}
+#user-input_table tr td{
+  width: 65%;
+}
+#user-input_table tr td input,select{
+  width: 220px;
+  border-radius: 3px;
+}
+#user-input_table tr td input[name="email"], input[name="city"], input[name="block"], input[name="building"]{
+  width: 460px;
+}
+#user-input_table tr td input:focus, table tr td select:focus{
+   border-color: rgb(104, 145, 162);
+   outline: 0;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+@media screen and (max-width: 991px) {
+  #user-input_table {
+    width: 100%;
+  }
+  #user-input_table tr th{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+  }
+  #user-input_table tr td{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+  }
+}
+
+/* ユーザ参照テーブル */
+#user_table {
+  width: 90%;
+  margin: 0 auto;
+}
+#user_table .thead{
+  background: #333333;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+#user_table tr th{
+  width: 35%;
+  background: #999999;
+  color: #fff;
+  text-align:right;
+}
+#user_table tr td{
+  width: 65%;
+}
+@media screen and (max-width: 991px) {
+  #user_table {
+    width: 90%;
+    font-size: 22px;
+
+  }
+  #user_table tr th{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #user_table tr td{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* プラン一覧テーブル */
+#plan_table {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+#plan_table tr th{
+  width: 80%;
+  padding: 40px 20px;
+  background: #fff;
+  text-align: left;
+}
+#plan_table tr td{
+  width: 20%;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  #plan_table {
+    font-size: 22px;
+  }
+  #plan_table #vacant_rooms{
+    display: block;
+    text-align: right;
+    padding-top: 10px;
+  }
+  #conditions {
+    font-size: 20px;
+  }
+}
+
+/* プラン詳細テーブル */
+#plan-detail_table {
+  width: 90%;
+  margin: 0 auto;
+}
+#plan-detail_table .thead{
+  background: #333333;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+#plan-detail_table .plan-name{
+  background: #fff;
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+}
+#plan-detail_table .plan-name button{
+  font-size: 16px;
+  text-align: center;
+}
+#plan-detail_table .plan-image{
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+}
+#plan-detail_table tr th{
+  width: 35%;
+  background: #999999;
+  color: #fff;
+  text-align:right;
+}
+#plan-detail_table tr td{
+  width: 65%;
+  background: #fff;
+}
+@media screen and (max-width: 991px) {
+  #plan-detail_table {
+    font-size: 22px;
+  }
+}
+
+/* 管理者用全情報参照テーブル */
+#all_table {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  #all_table {
+    font-size: 22px;
+  }
+}
+
+
+
+/* お気に入りボタン */
+#btn-good {
+
+}
+#btn-good:hover {
+  color: #fff;
+  background: #f44336;
+}
+.active {
+  color: #fff;
+  background: #f44336;
+}
