@@ -1,2 +1,5 @@
-# hotel-app
-ホテル予約サイト
+# hotel-app（ホテル予約サイト）
+自作PHP
+
+
+
