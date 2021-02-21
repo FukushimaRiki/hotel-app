@@ -12,7 +12,7 @@ class Users extends Db {
   public function add() {
     $sql = 'INSERT INTO '.$this->table;
     $sql .= ' (name, image, number_people, breakfast, dinner, price)';
-    $sql .= ' VALUE ("シングル朝食付きプラン", "breakfast1.jpg", 1, "あり", "なし", 10000)';
+    $sql .= ' VALUE ("ダブル素泊まりプラン", "double-room.jpg", 2, "なし", "なし", 10000)';
     $sth = $this->dbh->prepare($sql);
     $sth->execute();
   }
