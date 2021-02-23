@@ -47,7 +47,7 @@ CREATE TABLE `hotel_app`.`users` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  --
- -- テーブルのデータのダンプ `plans`
+ -- テーブルのデータのダンプ `users`
  --
 
  INSERT INTO `hotel_app`.`users` (`id`, `user_categories`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `email`, `password`, `tel`, `postcode`, `prefecture_id`, `city`, `block`, `building`, `created_at`, `updated_at`) VALUES
