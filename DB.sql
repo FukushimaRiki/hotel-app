@@ -46,6 +46,14 @@ CREATE TABLE `hotel_app`.`users` (
    PRIMARY KEY (`id`)
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+ --
+ -- テーブルのデータのダンプ `plans`
+ --
+
+ INSERT INTO `hotel_app`.`users` (`id`, `user_categories`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `email`, `password`, `tel`, `postcode`, `prefecture_id`, `city`, `block`, `building`, `created_at`, `updated_at`) VALUES
+ ('1', '1', '管理者', '', '', '', 'admin@mail.com', '$2y$10$ax4ZFI9AFZq04HUCvh21neoTh9W3QTT4gd51a5SHq6qb5/n9dZwT6', '', '', '', '', '', '', '', ''),
+ ('2', '2', '田中', '太郎', 'タナカ', 'タロウ', 'user1@mail.com', '$2y$10$aj5x0dpygcVp2OW7JUKfPumBGl8TVCnOPem17QiqEZYYCuS6t/H92', '09031317482', '2030034', '東京都', '東久留米市弥生', '1-1-1', '', '', '');
+
  -- --------------------------------------------------------
 
  --
