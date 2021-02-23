@@ -24,3 +24,7 @@
 ## データベース
 ##### データベース名：hotel_app
 ##### お使いのphpMyAdminに上のデータベースを作り、入っているDB.sqlをインポートしていただければお使いいただけるようになると思います。
+##### インポートすると挿入される、サンプルユーザ。
+##### サンプル管理者ユーザログイン：email = admin@mail.com , password = password
+##### サンプル旅行者ユーザログイン：email = user1@mail.com , password = 1111
+
